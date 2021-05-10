@@ -1,18 +1,19 @@
 #include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int T;
+	long long int T;
 	cin>>T;
-    double N[T];
-	double x[T];
-	double k[T];
-	for(int i=0;i<T;i++){
+    long long int N[T];
+	long long int x[T];
+	long long int k[T];
+	for(long long int i=0;i<T;i++){
 	    cin>>N[i]>>x[i]>>k[i];
 	}
-	for(int i=0;i<T;i++){
+	for(long long int i=0;i<T;i++){
 	    long long int c=0;
-	    for(int z=1;(z*k[i])<=(N[i]+1);z++){
+	    for(long long int z=1;(z*k[i])<=(N[i]+1);z++){
 	        
 	        if(z*k[i]==x[i]){
 	            c++;
